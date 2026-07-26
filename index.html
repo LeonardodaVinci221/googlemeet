@@ -101,13 +101,6 @@
 
         function chuc() {
 
-            let ten = document.getElementById("name").value;
-
-            let text = "Chào buổi tối cô gái nhỏ " + ten + " của anh! Chúc em luôn tươi cười, rạng rỡ và tràn đầy năng lượng. Yêu em! ❤️";
-
-            /* hiện chữ */
-            typeWriter(text);
-
             /* phát nhạc */
             let music = document.getElementById("music");
             music.currentTime = 0;
@@ -117,6 +110,13 @@
             video.style.display = "block";
             video.currentTime = 0;
             video.play();
+            
+            let ten = document.getElementById("name").value;
+
+            let text = "Chào buổi tối cô gái nhỏ " + ten + " của anh! Chúc em luôn tươi cười, rạng rỡ và tràn đầy năng lượng. Yêu em! ❤️";
+
+            /* hiện chữ */
+            typeWriter(text);
 
         }
 
